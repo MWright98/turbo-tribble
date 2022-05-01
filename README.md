@@ -15,10 +15,11 @@
   To install dependencies run "npm i"
 
 
-  To run tests run "npm run test"
-
   ## Usage
   Run 'node index' in the root folder
+  
+  ![Example](https://user-images.githubusercontent.com/63832314/166156490-b4a08410-fbc7-4f36-875f-a375ac7b8c6f.gif)
+
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
