@@ -1,12 +1,11 @@
 # Node.js README Generator
 
   ## Description
-  This is a simple command line program to generate professional README files
+  This is a simple command line program to generate professional README.md files
 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
   - [License](#license)
   - [Contribution](#how-to-contribute)
   - [Questions](#questions)
@@ -15,7 +14,7 @@
   To install dependencies run "npm i"
 
 
-  To run tests run "npm run test"
+  To run tests run "npm test"
 
   ## Usage
   Run 'node index' in the root folder
@@ -26,7 +25,7 @@
       https://opensource.org/licenses/MIT
 
   ## How To Contribute
-  Contributors should have a knowledge of Node.js and JS basics
+  Contributors should have a basic knowledge of js and Node.js
 
   ## Questions
   Project created by [MWright98](https://github.com/MWright98)
