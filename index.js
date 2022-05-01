@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const generateMarkdown = ('./utils/generateMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -23,14 +23,14 @@ const questions = [
     },
     {
         type: 'input',
-        name 'description',
+        name: 'description',
         message: "Please enter a short description of your project"
     },
     {
         type: 'list',
         name: 'license',
         message: 'What kind of license does your project have?',
-        choices: ['MIT', 'GPL 3.0', 'BSD 3', 'APACHE 2.0', 'None']
+        choices: ['MIT', 'GPL 3.0', 'BSL 1.0', 'APACHE 2.0', 'None']
     },
     {
         type: 'input',
@@ -42,7 +42,7 @@ const questions = [
         type: 'input',
         name: 'test',
         message: 'What command should be entered to run tests?',
-        deafualt: 'npm test'
+        defualt: 'npm test'
     },
     {
         type: 'input',
@@ -57,10 +57,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions).then(inquirerResponse => {
+        console.log('README Generating');
+        writeToFile('README.md', generateMarkdown({ ...inquirerResponse }));
+    });
+}
 
 // Function call to initialize app
 init();
