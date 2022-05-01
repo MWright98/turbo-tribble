@@ -14,11 +14,9 @@
   To install dependencies run "npm i"
 
 
-<<<<<<< HEAD
+
   To run tests run "npm test"
 
-=======
->>>>>>> 574e116a59a96503dd43929b15b3c7448e69f643
   ## Usage
   Run 'node index' in the root folder
   
